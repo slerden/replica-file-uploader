@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.itword.replica.fileuploader.controller.MainWindow">
+   <children>
+      <ImageView fitHeight="109.0" fitWidth="141.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="432.4177703857422" AnchorPane.topAnchor="14.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="welcomeLabel" layoutX="176.0" layoutY="43.0" text="Приветствую! Моё имя - Реплика.  Рад видеть тебя.&#10;Эта программа поможет тебе своевременно загружать файлы&#10;на удалённый сервер." AnchorPane.leftAnchor="176.0" AnchorPane.rightAnchor="69.0" AnchorPane.topAnchor="43.0" />
+      <ListView fx:id="dirs" layoutX="21.0" layoutY="187.0" prefHeight="148.0" prefWidth="547.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="178.0" />
+      <Label layoutX="21.0" layoutY="170.0" text="Прослушиваемые директории:" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="159.0" />
+      <Button fx:id="addBtn" layoutX="21.0" layoutY="344.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Добавить" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="20.0" />
+      <Label fx:id="timerLabel" layoutX="231.0" layoutY="348.0" text="До следующего прослушивания осталось: " AnchorPane.bottomAnchor="22.0" AnchorPane.rightAnchor="124.0" />
+      <Button fx:id="delBtn" layoutX="120.0" layoutY="344.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Удалить" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="120.0" />
+   </children>
+</AnchorPane>
